@@ -1,0 +1,185 @@
+[2026-07-25 14:26:48] [WARN     ] [root_null] Auth_Failed: Failed login attempt for identifier: Adsa | Total failed attempts: 1
+[2026-07-25 14:26:58] [AUTH     ] [root_null] Login_Success: User successfully logged in: Aswadedxz (ID: 1)
+[2026-07-25 14:27:02] [MISSION  ] [root_null] Mission_Cancelled: Cancelled mission [Extermination Operation] on slot #1.
+[2026-07-25 14:27:03] [MISSION  ] [root_null] Mission_Started: Started mission [Extermination Operation] on slot #1. Duration: 481 minutes.
+[2026-07-25 14:27:07] [INVENTORY] [root_null] Resource_Added: Added 20000 to [Credits]. Old quantity: 465000, New quantity: 485000
+[2026-07-25 14:27:07] [INVENTORY] [root_null] Resource_Added: Added 5 to [Orokin Cell]. Old quantity: 42, New quantity: 47
+[2026-07-25 14:27:07] [INVENTORY] [root_null] Resource_Added: Added 1000 to [Rubedo]. Old quantity: 9000, New quantity: 10000
+[2026-07-25 14:27:07] [FOUNDRY  ] [root_null] Craft_Cancelled: Crafting cancelled for: [Afuris Prime Blueprint]. Resources returned to inventory.
+[2026-07-25 14:27:11] [INVENTORY] [root_null] Resource_Consumed: Consumed 20000 from [Credits]. Old quantity: 485000, New quantity: 465000
+[2026-07-25 14:27:11] [INVENTORY] [root_null] Resource_Consumed: Consumed 5 from [Orokin Cell]. Old quantity: 47, New quantity: 42
+[2026-07-25 14:27:11] [INVENTORY] [root_null] Resource_Consumed: Consumed 1000 from [Rubedo]. Old quantity: 10000, New quantity: 9000
+[2026-07-25 14:27:11] [FOUNDRY  ] [root_null] Craft_Started: Started crafting blueprint: [Afuris Prime Blueprint]. Required time: 12 hours.
+[2026-07-25 14:27:20] [AUTH     ] [root_null] Logout_Success: User logged out (ID: 1)
+[2026-07-26 11:29:28] [AUTH     ] [root_null] Login_Success: User successfully logged in: Aswadedxz (ID: 1)
+[2026-07-26 11:29:37] [MISSION  ] [root_null] Mission_Claimed: Claimed rewards for mission [Extermination Operation] on slot #1.
+[2026-07-26 11:29:49] [MISSION  ] [root_null] Mission_Started: Started mission [Defense Operation] on slot #2. Duration: 655 minutes.
+[2026-07-26 11:29:55] [INVENTORY] [root_null] Resource_Added: Added 1 to [Boar Prime]. Old quantity: 0, New quantity: 1
+[2026-07-26 11:29:55] [FOUNDRY  ] [root_null] Craft_Claimed: Claimed crafted item from foundry: [Boar Prime Blueprint] (Result ID: 5)
+[2026-07-26 11:29:58] [INVENTORY] [root_null] Resource_Added: Added 1 to [Afuris Prime]. Old quantity: 0, New quantity: 1
+[2026-07-26 11:29:58] [FOUNDRY  ] [root_null] Craft_Claimed: Claimed crafted item from foundry: [Afuris Prime Blueprint] (Result ID: 6)
+[2026-07-26 11:30:32] [AUTH     ] [root_null] Logout_Success: User logged out (ID: 1)
+[2026-07-26 11:57:44] [AUTH     ] [root_null] Login_Success: User successfully logged in: Aswadedxz (ID: 1)
+[2026-07-26 11:58:03] [MISSION  ] [root_null] Mission_Cancelled: Cancelled mission [Defense Operation] on slot #2.
+[2026-07-26 11:58:05] [MISSION  ] [root_null] Mission_Started: Started mission [Spy Operation] on slot #3. Duration: 342 minutes.
+[2026-07-26 11:58:14] [AUTH     ] [root_null] Logout_Success: User logged out (ID: 1)
+[2026-07-26 15:23:56] [AUTH     ] [root_null] Login_Success: User successfully logged in: Aswadedxz (ID: 1)
+[2026-07-26 15:29:26] [AUTH     ] [root_null] Logout_Success: User logged out (ID: 1)
+[2026-07-26 15:29:49] [AUTH     ] [root_null] Login_Success: User successfully logged in: Aswadedxz (ID: 1)
+[2026-07-26 15:33:04] [INVENTORY] [root_null] Resource_Consumed: Consumed 15000 from [Credits]. Old quantity: 465000, New quantity: 450000
+[2026-07-26 15:33:04] [INVENTORY] [root_null] Resource_Consumed: Consumed 3 from [Orokin Cell]. Old quantity: 1695, New quantity: 1692
+[2026-07-26 15:33:04] [INVENTORY] [root_null] Resource_Consumed: Consumed 500 from [Plastids]. Old quantity: 9500, New quantity: 9000
+[2026-07-26 15:33:04] [INVENTORY] [root_null] GlobalTarget_Met: Target met! Enough [Orokin Cell] for all Blueprints! (Stock: 1692 / Total: 5)
+[2026-07-26 15:33:04] [FOUNDRY  ] [root_null] Blueprint_Ready: All resources collected for Afuris Prime Blueprint. Ready to assemble.
+[2026-07-26 15:33:04] [FOUNDRY  ] [root_null] Craft_Started: Started crafting blueprint: [Boar Prime Blueprint]. Required time: 12 hours.
+[2026-07-26 15:33:21] [INVENTORY] [root_null] Resource_Consumed: Consumed 20000 from [Credits]. Old quantity: 450000, New quantity: 430000
+[2026-07-26 15:33:21] [INVENTORY] [root_null] Resource_Consumed: Consumed 5 from [Orokin Cell]. Old quantity: 1692, New quantity: 1687
+[2026-07-26 15:33:21] [INVENTORY] [root_null] Resource_Consumed: Consumed 1000 from [Rubedo]. Old quantity: 10506, New quantity: 9506
+[2026-07-26 15:33:21] [FOUNDRY  ] [root_null] Craft_Started: Started crafting blueprint: [Afuris Prime Blueprint]. Required time: 12 hours.
+[2026-07-26 15:33:26] [INVENTORY] [root_null] Resource_Added: Added 20000 to [Credits]. Old quantity: 430000, New quantity: 450000
+[2026-07-26 15:33:26] [INVENTORY] [root_null] Resource_Added: Added 5 to [Orokin Cell]. Old quantity: 1687, New quantity: 1692
+[2026-07-26 15:33:26] [INVENTORY] [root_null] Resource_Added: Added 1000 to [Rubedo]. Old quantity: 9506, New quantity: 10506
+[2026-07-26 15:33:26] [INVENTORY] [root_null] GlobalTarget_Met: Target met! Enough [Orokin Cell] for all Blueprints! (Stock: 1692 / Total: 5)
+[2026-07-26 15:33:26] [INVENTORY] [root_null] GlobalTarget_Met: Target met! Enough [Rubedo] for all Blueprints! (Stock: 10506 / Total: 1000)
+[2026-07-26 15:33:26] [FOUNDRY  ] [root_null] Craft_Cancelled: Crafting cancelled for: [Afuris Prime Blueprint]. Resources returned to inventory.
+[2026-07-26 15:33:48] [AUTH     ] [root_null] Logout_Success: User logged out (ID: 1)
+[2026-07-26 15:51:32] [AUTH     ] [root_null] Register_Success: New user registered successfully: MIrceaBoss (Email: misu@pisu.com)
+[2026-07-26 15:51:38] [AUTH     ] [root_null] Login_Success: User successfully logged in: MIrceaBoss (ID: 2)
+[2026-07-26 15:51:49] [AUTH     ] [root_null] Logout_Success: User logged out (ID: 2)
+[2026-07-26 15:52:00] [AUTH     ] [root_null] Login_Success: User successfully logged in: Aswadedxz (ID: 1)
+[2026-07-26 15:52:14] [INVENTORY] [root_null] Resource_Consumed: Consumed 20000 from [Credits]. Old quantity: 450000, New quantity: 430000
+[2026-07-26 15:52:14] [INVENTORY] [root_null] Resource_Consumed: Consumed 5 from [Orokin Cell]. Old quantity: 1692, New quantity: 1687
+[2026-07-26 15:52:14] [INVENTORY] [root_null] Resource_Consumed: Consumed 1000 from [Rubedo]. Old quantity: 10506, New quantity: 9506
+[2026-07-26 15:52:14] [FOUNDRY  ] [root_null] Craft_Started: Started crafting blueprint: [Afuris Prime Blueprint]. Required time: 12 hours.
+[2026-07-26 15:52:26] [INVENTORY] [root_null] Resource_Added: Added 20000 to [Credits]. Old quantity: 430000, New quantity: 450000
+[2026-07-26 15:52:26] [INVENTORY] [root_null] Resource_Added: Added 5 to [Orokin Cell]. Old quantity: 1687, New quantity: 1692
+[2026-07-26 15:52:26] [INVENTORY] [root_null] Resource_Added: Added 1000 to [Rubedo]. Old quantity: 9506, New quantity: 10506
+[2026-07-26 15:52:26] [INVENTORY] [root_null] GlobalTarget_Met: Target met! Enough [Orokin Cell] for all Blueprints! (Stock: 1692 / Total: 5)
+[2026-07-26 15:52:26] [FOUNDRY  ] [root_null] Blueprint_Ready: All resources collected for Afuris Prime Blueprint. Ready to assemble.
+[2026-07-26 15:52:26] [INVENTORY] [root_null] GlobalTarget_Met: Target met! Enough [Rubedo] for all Blueprints! (Stock: 10506 / Total: 1000)
+[2026-07-26 15:52:26] [FOUNDRY  ] [root_null] Craft_Cancelled: Crafting cancelled for: [Afuris Prime Blueprint]. Resources returned to inventory.
+[2026-07-26 15:52:32] [INVENTORY] [root_null] Resource_Consumed: Consumed 20000 from [Credits]. Old quantity: 450000, New quantity: 430000
+[2026-07-26 15:52:32] [INVENTORY] [root_null] Resource_Consumed: Consumed 5 from [Orokin Cell]. Old quantity: 1692, New quantity: 1687
+[2026-07-26 15:52:32] [INVENTORY] [root_null] Resource_Consumed: Consumed 1000 from [Rubedo]. Old quantity: 10506, New quantity: 9506
+[2026-07-26 15:52:33] [FOUNDRY  ] [root_null] Craft_Started: Started crafting blueprint: [Afuris Prime Blueprint]. Required time: 12 hours.
+[2026-07-26 15:52:55] [AUTH     ] [root_null] Logout_Success: User logged out (ID: 1)
+[2026-07-26 15:58:53] [WARN     ] [root_null] Auth_Failed: Failed login attempt for identifier: Aswadedxz | Total failed attempts: 1
+[2026-07-26 16:00:16] [AUTH     ] [root_null] Register_Success: New user registered successfully: NatyTrandafir (Email: LicaTrandafir21@gmail.com)
+[2026-07-26 16:00:36] [AUTH     ] [root_null] Login_Success: User successfully logged in: NatyTrandafir (ID: 3)
+[2026-07-26 16:00:47] [MISSION  ] [root_null] Mission_Started: Started mission [Defense Operation] on slot #2. Duration: 458 minutes.
+[2026-07-26 16:02:37] [AUTH     ] [root_null] Logout_Success: User logged out (ID: 3)
+[2026-07-26 16:04:55] [AUTH     ] [root_null] Login_Success: User successfully logged in: Aswadedxz (ID: 1)
+[2026-07-26 16:07:56] [INVENTORY] [root_null] Resource_Added: Added 15000 to [Credits]. Old quantity: 430000, New quantity: 445000
+[2026-07-26 16:07:56] [INVENTORY] [root_null] Resource_Added: Added 3 to [Orokin Cell]. Old quantity: 1687, New quantity: 1690
+[2026-07-26 16:07:56] [INVENTORY] [root_null] Resource_Added: Added 500 to [Plastids]. Old quantity: 9000, New quantity: 9500
+[2026-07-26 16:07:56] [INVENTORY] [root_null] GlobalTarget_Met: Target met! Enough [Orokin Cell] for all Blueprints! (Stock: 1690 / Total: 3)
+[2026-07-26 16:07:56] [FOUNDRY  ] [root_null] Blueprint_Ready: All resources collected for Boar Prime Blueprint. Ready to assemble.
+[2026-07-26 16:07:56] [INVENTORY] [root_null] GlobalTarget_Met: Target met! Enough [Plastids] for all Blueprints! (Stock: 9500 / Total: 500)
+[2026-07-26 16:07:56] [FOUNDRY  ] [root_null] Craft_Cancelled: Crafting cancelled for: [Boar Prime Blueprint]. Resources returned to inventory.
+[2026-07-26 16:08:05] [INVENTORY] [root_null] Resource_Consumed: Consumed 15000 from [Credits]. Old quantity: 445000, New quantity: 430000
+[2026-07-26 16:08:05] [INVENTORY] [root_null] Resource_Consumed: Consumed 3 from [Orokin Cell]. Old quantity: 1690, New quantity: 1687
+[2026-07-26 16:08:06] [INVENTORY] [root_null] Resource_Consumed: Consumed 500 from [Plastids]. Old quantity: 9500, New quantity: 9000
+[2026-07-26 16:08:06] [FOUNDRY  ] [root_null] Craft_Started: Started crafting blueprint: [Boar Prime Blueprint]. Required time: 12 hours.
+[2026-07-26 16:08:13] [INVENTORY] [root_null] Resource_Added: Added 15000 to [Credits]. Old quantity: 430000, New quantity: 445000
+[2026-07-26 16:08:13] [INVENTORY] [root_null] Resource_Added: Added 3 to [Orokin Cell]. Old quantity: 1687, New quantity: 1690
+[2026-07-26 16:08:13] [INVENTORY] [root_null] Resource_Added: Added 500 to [Plastids]. Old quantity: 9000, New quantity: 9500
+[2026-07-26 16:08:13] [INVENTORY] [root_null] GlobalTarget_Met: Target met! Enough [Orokin Cell] for all Blueprints! (Stock: 1690 / Total: 3)
+[2026-07-26 16:08:13] [INVENTORY] [root_null] GlobalTarget_Met: Target met! Enough [Plastids] for all Blueprints! (Stock: 9500 / Total: 500)
+[2026-07-26 16:08:13] [FOUNDRY  ] [root_null] Craft_Cancelled: Crafting cancelled for: [Boar Prime Blueprint]. Resources returned to inventory.
+[2026-07-26 16:08:33] [INVENTORY] [root_null] Resource_Added: Added 20000 to [Credits]. Old quantity: 445000, New quantity: 465000
+[2026-07-26 16:08:33] [INVENTORY] [root_null] Resource_Added: Added 5 to [Orokin Cell]. Old quantity: 1690, New quantity: 1695
+[2026-07-26 16:08:33] [INVENTORY] [root_null] Resource_Added: Added 1000 to [Rubedo]. Old quantity: 9506, New quantity: 10506
+[2026-07-26 16:08:33] [FOUNDRY  ] [root_null] Blueprint_Ready: All resources collected for Afuris Prime Blueprint. Ready to assemble.
+[2026-07-26 16:08:33] [INVENTORY] [root_null] GlobalTarget_Met: Target met! Enough [Rubedo] for all Blueprints! (Stock: 10506 / Total: 1000)
+[2026-07-26 16:08:33] [FOUNDRY  ] [root_null] Craft_Cancelled: Crafting cancelled for: [Afuris Prime Blueprint]. Resources returned to inventory.
+[2026-07-26 16:08:47] [AUTH     ] [root_null] Logout_Success: User logged out (ID: 1)
+[2026-07-28 11:50:14] [AUTH     ] [root_null] Login_Success: User successfully logged in: Aswadedxz (ID: 1)
+[2026-07-28 11:50:18] [INVENTORY] [root_null] Resource_Added: Added 1667 to [Credits]. Old quantity: 465000, New quantity: 466667
+[2026-07-28 11:50:18] [INVENTORY] [root_null] Resource_Added: Added 867 to [Orokin Cell]. Old quantity: 1695, New quantity: 2562
+[2026-07-28 11:50:18] [INVENTORY] [root_null] GlobalTarget_Met: Target met! Enough [Orokin Cell] for all Blueprints! (Stock: 2562 / Total: 8)
+[2026-07-28 11:50:18] [FOUNDRY  ] [root_null] Blueprint_Ready: All resources collected for Boar Prime Blueprint. Ready to assemble.
+[2026-07-28 11:50:18] [FOUNDRY  ] [root_null] Blueprint_Ready: All resources collected for Afuris Prime Blueprint. Ready to assemble.
+[2026-07-28 11:50:18] [MISSION  ] [root_null] Mission_Claimed: Claimed rewards for mission [Spy Operation] on slot #3.
+[2026-07-28 11:50:22] [MISSION  ] [root_null] Mission_Started: Started mission [Defense Operation] on slot #2. Duration: 655 minutes.
+[2026-07-28 11:50:30] [INVENTORY] [root_null] Resource_Consumed: Consumed 20000 from [Credits]. Old quantity: 466667, New quantity: 446667
+[2026-07-28 11:50:30] [INVENTORY] [root_null] Resource_Consumed: Consumed 5 from [Orokin Cell]. Old quantity: 2562, New quantity: 2557
+[2026-07-28 11:50:30] [INVENTORY] [root_null] Resource_Consumed: Consumed 1000 from [Rubedo]. Old quantity: 10506, New quantity: 9506
+[2026-07-28 11:50:30] [FOUNDRY  ] [root_null] Craft_Started: Started crafting blueprint: [Afuris Prime Blueprint]. Required time: 12 hours.
+[2026-07-28 11:50:35] [INVENTORY] [root_null] Resource_Added: Added 20000 to [Credits]. Old quantity: 446667, New quantity: 466667
+[2026-07-28 11:50:35] [INVENTORY] [root_null] Resource_Added: Added 5 to [Orokin Cell]. Old quantity: 2557, New quantity: 2562
+[2026-07-28 11:50:35] [INVENTORY] [root_null] Resource_Added: Added 1000 to [Rubedo]. Old quantity: 9506, New quantity: 10506
+[2026-07-28 11:50:35] [INVENTORY] [root_null] GlobalTarget_Met: Target met! Enough [Rubedo] for all Blueprints! (Stock: 10506 / Total: 1000)
+[2026-07-28 11:50:35] [FOUNDRY  ] [root_null] Craft_Cancelled: Crafting cancelled for: [Afuris Prime Blueprint]. Resources returned to inventory.
+[2026-07-28 11:50:39] [INVENTORY] [root_null] Resource_Consumed: Consumed 20000 from [Credits]. Old quantity: 466667, New quantity: 446667
+[2026-07-28 11:50:39] [INVENTORY] [root_null] Resource_Consumed: Consumed 5 from [Orokin Cell]. Old quantity: 2562, New quantity: 2557
+[2026-07-28 11:50:39] [INVENTORY] [root_null] Resource_Consumed: Consumed 1000 from [Rubedo]. Old quantity: 10506, New quantity: 9506
+[2026-07-28 11:50:39] [FOUNDRY  ] [root_null] Craft_Started: Started crafting blueprint: [Afuris Prime Blueprint]. Required time: 12 hours.
+[2026-07-28 11:50:42] [INVENTORY] [root_null] Resource_Consumed: Consumed 15000 from [Credits]. Old quantity: 446667, New quantity: 431667
+[2026-07-28 11:50:42] [INVENTORY] [root_null] Resource_Consumed: Consumed 3 from [Orokin Cell]. Old quantity: 2557, New quantity: 2554
+[2026-07-28 11:50:42] [INVENTORY] [root_null] Resource_Consumed: Consumed 500 from [Plastids]. Old quantity: 9500, New quantity: 9000
+[2026-07-28 11:50:42] [FOUNDRY  ] [root_null] Craft_Started: Started crafting blueprint: [Boar Prime Blueprint]. Required time: 12 hours.
+[2026-07-28 11:50:55] [AUTH     ] [root_null] Logout_Success: User logged out (ID: 1)
+[2026-07-28 11:50:58] [WARN     ] [root_null] Auth_Failed: Failed login attempt for identifier:  | Total failed attempts: 1
+[2026-07-28 11:50:59] [WARN     ] [root_null] Auth_Failed: Failed login attempt for identifier:  | Total failed attempts: 2
+[2026-07-28 11:51:00] [WARN     ] [root_null] Auth_Failed: Failed login attempt for identifier:  | Total failed attempts: 3
+[2026-07-28 11:51:00] [WARN     ] [root_null] Device_Lockout: Device locked out due to multiple failed logins.
+[2026-07-28 11:51:02] [WARN     ] [root_null] Device_Locked: Blocked device attempted login.
+[2026-07-28 11:51:05] [WARN     ] [root_null] Device_Locked: Blocked device attempted login.
+[2026-07-28 11:51:09] [WARN     ] [root_null] Device_Locked: Blocked device attempted login.
+[2026-07-28 11:56:09] [WARN     ] [root_null] RateLimit_Device: Device register rate limit exceeded.
+[2026-07-28 11:56:11] [WARN     ] [root_null] RateLimit_Device: Device register rate limit exceeded.
+[2026-07-28 11:56:15] [WARN     ] [root_null] RateLimit_Device: Device register rate limit exceeded.
+[2026-07-28 11:56:24] [WARN     ] [root_null] RateLimit_Device: Device register rate limit exceeded.
+[2026-07-28 12:04:57] [WARN     ] [root_null] RateLimit_Device: Device register rate limit exceeded.
+[2026-07-28 12:04:59] [WARN     ] [root_null] RateLimit_Device: Device register rate limit exceeded.
+[2026-07-28 12:05:05] [WARN     ] [root_null] Auth_Failed: Failed login attempt for identifier:  | Total failed attempts: 1
+[2026-07-28 12:05:07] [WARN     ] [root_null] Auth_Failed: Failed login attempt for identifier:  | Total failed attempts: 2
+[2026-07-28 12:05:09] [WARN     ] [root_null] Auth_Failed: Failed login attempt for identifier:  | Total failed attempts: 3
+[2026-07-28 12:05:09] [WARN     ] [root_null] Device_Lockout: Device locked out due to multiple failed logins.
+[2026-07-28 14:11:27] [WARN     ] [root_null] RateLimit_Device: Device register rate limit exceeded.
+[2026-07-28 14:11:49] [AUTH     ] [root_null] Login_Success: User successfully logged in: Aswadedxz (ID: 1)
+[2026-07-28 14:12:49] [INVENTORY] [root_null] Resource_Added: Added 20000 to [Credits]. Old quantity: 431667, New quantity: 451667
+[2026-07-28 14:12:49] [INVENTORY] [root_null] Resource_Added: Added 5 to [Orokin Cell]. Old quantity: 2554, New quantity: 2559
+[2026-07-28 14:12:49] [INVENTORY] [root_null] Resource_Added: Added 1000 to [Rubedo]. Old quantity: 9506, New quantity: 10506
+[2026-07-28 14:12:49] [INVENTORY] [root_null] GlobalTarget_Met: Target met! Enough [Orokin Cell] for all Blueprints! (Stock: 2559 / Total: 5)
+[2026-07-28 14:12:49] [FOUNDRY  ] [root_null] Blueprint_Ready: All resources collected for Afuris Prime Blueprint. Ready to assemble.
+[2026-07-28 14:12:49] [INVENTORY] [root_null] GlobalTarget_Met: Target met! Enough [Rubedo] for all Blueprints! (Stock: 10506 / Total: 1000)
+[2026-07-28 14:12:49] [FOUNDRY  ] [root_null] Craft_Cancelled: Crafting cancelled for: [Afuris Prime Blueprint]. Resources returned to inventory.
+[2026-07-28 14:12:54] [INVENTORY] [root_null] Resource_Consumed: Consumed 20000 from [Credits]. Old quantity: 451667, New quantity: 431667
+[2026-07-28 14:12:54] [INVENTORY] [root_null] Resource_Consumed: Consumed 5 from [Orokin Cell]. Old quantity: 2559, New quantity: 2554
+[2026-07-28 14:12:54] [INVENTORY] [root_null] Resource_Consumed: Consumed 1000 from [Rubedo]. Old quantity: 10506, New quantity: 9506
+[2026-07-28 14:12:55] [FOUNDRY  ] [root_null] Craft_Started: Started crafting blueprint: [Afuris Prime Blueprint]. Required time: 12 hours.
+[2026-07-28 14:13:01] [INVENTORY] [root_null] Resource_Added: Added 20000 to [Credits]. Old quantity: 431667, New quantity: 451667
+[2026-07-28 14:13:01] [INVENTORY] [root_null] Resource_Added: Added 5 to [Orokin Cell]. Old quantity: 2554, New quantity: 2559
+[2026-07-28 14:13:01] [INVENTORY] [root_null] Resource_Added: Added 1000 to [Rubedo]. Old quantity: 9506, New quantity: 10506
+[2026-07-28 14:13:01] [INVENTORY] [root_null] GlobalTarget_Met: Target met! Enough [Orokin Cell] for all Blueprints! (Stock: 2559 / Total: 5)
+[2026-07-28 14:13:01] [INVENTORY] [root_null] GlobalTarget_Met: Target met! Enough [Rubedo] for all Blueprints! (Stock: 10506 / Total: 1000)
+[2026-07-28 14:13:01] [FOUNDRY  ] [root_null] Craft_Cancelled: Crafting cancelled for: [Afuris Prime Blueprint]. Resources returned to inventory.
+[2026-07-28 14:14:09] [AUTH     ] [root_null] Login_Success: User successfully logged in: Aswadedxz (ID: 1)
+[2026-07-28 14:14:13] [INVENTORY] [root_null] Resource_Added: Added 15000 to [Credits]. Old quantity: 451667, New quantity: 466667
+[2026-07-28 14:14:13] [INVENTORY] [root_null] Resource_Added: Added 3 to [Orokin Cell]. Old quantity: 2559, New quantity: 2562
+[2026-07-28 14:14:13] [INVENTORY] [root_null] Resource_Added: Added 500 to [Plastids]. Old quantity: 9000, New quantity: 9500
+[2026-07-28 14:14:13] [INVENTORY] [root_null] GlobalTarget_Met: Target met! Enough [Orokin Cell] for all Blueprints! (Stock: 2562 / Total: 8)
+[2026-07-28 14:14:13] [FOUNDRY  ] [root_null] Blueprint_Ready: All resources collected for Boar Prime Blueprint. Ready to assemble.
+[2026-07-28 14:14:13] [FOUNDRY  ] [root_null] Blueprint_Ready: All resources collected for Afuris Prime Blueprint. Ready to assemble.
+[2026-07-28 14:14:13] [INVENTORY] [root_null] GlobalTarget_Met: Target met! Enough [Plastids] for all Blueprints! (Stock: 9500 / Total: 500)
+[2026-07-28 14:14:13] [FOUNDRY  ] [root_null] Craft_Cancelled: Crafting cancelled for: [Boar Prime Blueprint]. Resources returned to inventory.
+[2026-07-28 14:14:21] [INVENTORY] [root_null] Resource_Consumed: Consumed 15000 from [Credits]. Old quantity: 466667, New quantity: 451667
+[2026-07-28 14:14:21] [INVENTORY] [root_null] Resource_Consumed: Consumed 3 from [Orokin Cell]. Old quantity: 2562, New quantity: 2559
+[2026-07-28 14:14:21] [INVENTORY] [root_null] Resource_Consumed: Consumed 500 from [Plastids]. Old quantity: 9500, New quantity: 9000
+[2026-07-28 14:14:22] [FOUNDRY  ] [root_null] Craft_Started: Started crafting blueprint: [Boar Prime Blueprint]. Required time: 12 hours.
+[2026-07-28 14:14:25] [INVENTORY] [root_null] Resource_Added: Added 15000 to [Credits]. Old quantity: 451667, New quantity: 466667
+[2026-07-28 14:14:25] [INVENTORY] [root_null] Resource_Added: Added 3 to [Orokin Cell]. Old quantity: 2559, New quantity: 2562
+[2026-07-28 14:14:25] [INVENTORY] [root_null] Resource_Added: Added 500 to [Plastids]. Old quantity: 9000, New quantity: 9500
+[2026-07-28 14:14:25] [INVENTORY] [root_null] GlobalTarget_Met: Target met! Enough [Plastids] for all Blueprints! (Stock: 9500 / Total: 500)
+[2026-07-28 14:14:25] [FOUNDRY  ] [root_null] Craft_Cancelled: Crafting cancelled for: [Boar Prime Blueprint]. Resources returned to inventory.
+[2026-07-28 14:14:29] [INVENTORY] [root_null] Resource_Consumed: Consumed 20000 from [Credits]. Old quantity: 466667, New quantity: 446667
+[2026-07-28 14:14:29] [INVENTORY] [root_null] Resource_Consumed: Consumed 5 from [Orokin Cell]. Old quantity: 2562, New quantity: 2557
+[2026-07-28 14:14:29] [INVENTORY] [root_null] Resource_Consumed: Consumed 1000 from [Rubedo]. Old quantity: 10506, New quantity: 9506
+[2026-07-28 14:14:29] [FOUNDRY  ] [root_null] Craft_Started: Started crafting blueprint: [Afuris Prime Blueprint]. Required time: 12 hours.
+[2026-07-28 14:14:31] [INVENTORY] [root_null] Resource_Added: Added 20000 to [Credits]. Old quantity: 446667, New quantity: 466667
+[2026-07-28 14:14:31] [INVENTORY] [root_null] Resource_Added: Added 5 to [Orokin Cell]. Old quantity: 2557, New quantity: 2562
+[2026-07-28 14:14:31] [INVENTORY] [root_null] Resource_Added: Added 1000 to [Rubedo]. Old quantity: 9506, New quantity: 10506
+[2026-07-28 14:14:32] [INVENTORY] [root_null] GlobalTarget_Met: Target met! Enough [Rubedo] for all Blueprints! (Stock: 10506 / Total: 1000)
+[2026-07-28 14:14:32] [FOUNDRY  ] [root_null] Craft_Cancelled: Crafting cancelled for: [Afuris Prime Blueprint]. Resources returned to inventory.
+[2026-07-28 14:15:29] [AUTH     ] [root_null] Logout_Success: User logged out (ID: 1)

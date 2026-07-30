@@ -1,0 +1,42 @@
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: my_app_mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${DB_NAME}
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./sql:/docker-entrypoint-initdb.d
+
+  redis:
+    image: redis:alpine
+    container_name: my_app_redis
+    restart: always
+    ports:
+      - "6379:6379"
+
+  app:
+    build: .
+    container_name: my_app_swing
+    depends_on:
+      - mysql
+      - redis
+    environment:
+      - DISPLAY=${DISPLAY}
+      - DB_HOST=mysql
+      - DB_PORT=3306
+      - DB_NAME=${DB_NAME}
+      - DB_USER=root
+      - DB_ROOT_PASSWORD=${DB_ROOT_PASSWORD}
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - ./logs:/app/logs
+
+volumes:
+  mysql_data:
