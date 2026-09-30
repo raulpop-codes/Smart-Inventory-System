@@ -1,5 +1,7 @@
 # Smart Inventory System
 
+**Desktop inventory and crafting manager for Warframe — Java, MySQL, Redis**
+
 A desktop inventory and crafting manager inspired by *Warframe*'s Foundry system — rebuilt to actually be usable. Instead of manually digging through thousands of resources to figure out what a blueprint needs and how much of it you're missing, this app tracks your stock, tells you exactly what's still required, and alerts you the moment a blueprint (or a shared resource across *all* your pending blueprints) is ready to build.
 
 ## Why this exists
@@ -95,11 +97,11 @@ org.example
 
 ## Security
 
-- API keys and secrets are never hardcoded — all sensitive configuration is read from environment variables, which are **not** committed to the repository (`.env` is git-ignored; `.env.example` documents the required variables).
+- Database and Redis credentials are never hardcoded — all sensitive configuration is read from environment variables, which are **not** committed to the repository (`.env` is git-ignored; `.env.example` documents the required variables).
 - Passwords are hashed with bcrypt (jBCrypt); plaintext passwords are never stored.
 - All user input is validated and sanitized before use.
-- No database table is publicly exposed by default — access goes through the repository/service layers.
-- Protected routes/actions require authentication.
+- All data access goes through the repository/service layers — the UI never queries the database directly.
+- Inventory, foundry and mission actions require an authenticated session.
 - **Rate limiting** (Redis-backed) caps login and registration attempts both globally and per-device.
 - **Device lockout** (Redis-backed) temporarily blocks a device after repeated failed login attempts.
 - User sessions are managed through Redis rather than kept only in memory.
@@ -130,7 +132,7 @@ org.example
    ```
 3. Start MySQL and Redis:
    ```bash
-   docker-compose up -d
+   docker compose up -d
    ```
    The MySQL schema in `sql/init.sql` is applied automatically on first startup.
 4. Build the project:
@@ -144,8 +146,10 @@ org.example
 
 ## Database
 
-The schema (`sql/init.sql`) includes tables for users, login attempts, item categories, items, blueprints, blueprint resource requirements, per-user inventory and blueprint progress, and missions with their rewards.
+The schema (`sql/init.sql`) includes tables for users, login attempts, item categories, items, blueprints, blueprint resource requirements, per-user inventory and blueprint progress, and missions with their rewards. The database holds 600+ resources and items.
 
 ## Status
 
 This is a personal project built to solve a genuinely annoying problem in Warframe's UX. Contributions, suggestions, and issue reports are welcome.
+
+*Not affiliated with or endorsed by Digital Extremes. Warframe is a trademark of Digital Extremes Ltd.*
