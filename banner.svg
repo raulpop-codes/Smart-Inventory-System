@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="1200" height="320" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B2018"/>
+      <stop offset="55%" stop-color="#113524"/>
+      <stop offset="100%" stop-color="#0D2B1F"/>
+    </linearGradient>
+    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#3FB27F" fill-opacity="0.16"/>
+    </pattern>
+    <clipPath id="clip"><rect width="1200" height="320" rx="16"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#clip)">
+    <rect width="1200" height="320" fill="url(#bg)"/>
+    <rect width="1200" height="320" fill="url(#dots)"/>
+
+    <!-- crate grid -->
+    <g stroke="#3FB27F" stroke-opacity="0.4" stroke-width="2" fill="none">
+      <rect x="892" y="70" width="56" height="56" rx="8"/>
+      <rect x="962" y="70" width="56" height="56" rx="8"/>
+      <rect x="1032" y="70" width="56" height="56" rx="8"/>
+      <rect x="1102" y="70" width="56" height="56" rx="8"/>
+
+      <rect x="892" y="140" width="56" height="56" rx="8"/>
+      <rect x="962" y="140" width="56" height="56" rx="8" stroke-opacity="0.85" stroke="#3FB27F"/>
+      <rect x="1032" y="140" width="56" height="56" rx="8"/>
+      <rect x="1102" y="140" width="56" height="56" rx="8"/>
+
+      <rect x="892" y="210" width="56" height="56" rx="8"/>
+      <rect x="962" y="210" width="56" height="56" rx="8"/>
+      <rect x="1032" y="210" width="56" height="56" rx="8" stroke-opacity="0.85" stroke="#3FB27F"/>
+      <rect x="1102" y="210" width="56" height="56" rx="8"/>
+    </g>
+
+    <g fill="#3FB27F" fill-opacity="0.22">
+      <rect x="902" y="80" width="36" height="6" rx="3"/>
+      <rect x="972" y="80" width="36" height="6" rx="3"/>
+      <rect x="1042" y="80" width="36" height="6" rx="3"/>
+      <rect x="1112" y="80" width="36" height="6" rx="3"/>
+      <rect x="902" y="150" width="36" height="6" rx="3"/>
+      <rect x="1042" y="150" width="36" height="6" rx="3"/>
+      <rect x="1112" y="150" width="36" height="6" rx="3"/>
+      <rect x="902" y="220" width="36" height="6" rx="3"/>
+      <rect x="972" y="220" width="36" height="6" rx="3"/>
+      <rect x="1112" y="220" width="36" height="6" rx="3"/>
+    </g>
+
+    <!-- ready markers -->
+    <g fill="#3FB27F" fill-opacity="0.7">
+      <circle cx="990" cy="168" r="7"/>
+      <circle cx="1060" cy="238" r="7"/>
+    </g>
+
+    <rect x="80" y="68" width="64" height="4" rx="2" fill="#3FB27F"/>
+
+    <text x="80" y="140" font-family="Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="54" font-weight="700" fill="#FFFFFF" letter-spacing="-1">Smart Inventory</text>
+    <text x="80" y="196" font-family="Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="54" font-weight="700" fill="#3FB27F" letter-spacing="-1">System</text>
+
+    <text x="80" y="236" font-family="Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="18" fill="#8FBFA9">Inventory and crafting manager for Warframe&#8217;s Foundry, with readiness alarms</text>
+
+    <text x="80" y="272" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#5E9078" letter-spacing="0.5">Java 21  &#183;  Swing  &#183;  MySQL  &#183;  Redis  &#183;  Docker</text>
+
+    <rect x="0.75" y="0.75" width="1198.5" height="318.5" rx="16" stroke="#2A7D5A" stroke-opacity="0.5" stroke-width="1.5"/>
+  </g>
+</svg>
