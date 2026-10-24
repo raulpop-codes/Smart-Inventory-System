@@ -1,23 +1,64 @@
-# Smart Inventory System
+<p align="center">
+  <img src="assets/banner.svg" alt="Smart Inventory System — inventory and crafting manager for Warframe's Foundry" width="100%">
+</p>
 
-**Desktop inventory and crafting manager for Warframe — Java, MySQL, Redis**
+<p align="center">
+  <img src="https://img.shields.io/badge/Java%2021-0E2A1F?style=for-the-badge&logo=openjdk&logoColor=3FB27F">
+  <img src="https://img.shields.io/badge/Swing-0E2A1F?style=for-the-badge&logo=openjdk&logoColor=3FB27F">
+  <img src="https://img.shields.io/badge/MySQL-0E2A1F?style=for-the-badge&logo=mysql&logoColor=3FB27F">
+  <img src="https://img.shields.io/badge/Redis-0E2A1F?style=for-the-badge&logo=redis&logoColor=3FB27F">
+  <img src="https://img.shields.io/badge/Docker-0E2A1F?style=for-the-badge&logo=docker&logoColor=3FB27F">
+  <img src="https://img.shields.io/badge/Maven-0E2A1F?style=for-the-badge&logo=apachemaven&logoColor=3FB27F">
+</p>
 
-A desktop inventory and crafting manager inspired by *Warframe*'s Foundry system — rebuilt to actually be usable. Instead of manually digging through thousands of resources to figure out what a blueprint needs and how much of it you're missing, this app tracks your stock, tells you exactly what's still required, and alerts you the moment a blueprint (or a shared resource across *all* your pending blueprints) is ready to build.
+A desktop inventory and crafting manager inspired by *Warframe*'s Foundry system — rebuilt to actually be usable. Instead of manually digging through thousands of resources to figure out what a blueprint needs and how much of it you're missing, this app tracks your stock, tells you exactly what's still required, and alerts you the moment a blueprint — or a shared resource across *all* your pending blueprints — is ready to build.
+
+<p align="center">
+  <img src="screenshots/09-analytics-aggregated-resources.png" width="700" alt="Analytics panel aggregating resource requirements across every uncrafted blueprint">
+</p>
+
+<p align="center"><sub>The Resource Requirement Engine — every resource needed across all uncrafted blueprints, in one table, with have-vs-need and a ready/short flag.</sub></p>
+
+---
+
+**Contents** · [Why this exists](#why-this-exists) · [Features](#features) · [Walkthrough](#walkthrough) · [Tech stack](#tech-stack) · [Architecture](#architecture) · [Security](#security) · [Getting started](#getting-started)
+
+---
 
 ## Why this exists
 
-Warframe's own inventory/foundry UI makes you cross-reference resource counts against blueprint requirements by hand, one item at a time. With thousands of resources and dozens of blueprints in progress, that's tedious and error-prone. This project automates the bookkeeping: track what you have, track what you need, and get notified automatically when you're ready to craft.
+Warframe's own inventory and foundry UI makes you cross-reference resource counts against blueprint requirements by hand, one item at a time. With thousands of resources and dozens of blueprints in progress, that's tedious and error-prone.
+
+This project automates the bookkeeping: track what you have, track what you need, and get notified automatically when you're ready to craft.
 
 ## Features
 
-- **Inventory tracking** — manage resource quantities and see live stock levels.
-- **Foundry / crafting system** — browse blueprints by category, start crafting, and consume the correct resources and credits automatically.
-- **Automatic readiness alarms**, built on an Observer pattern:
-  - **Blueprint Threshold Watcher** — notifies you the instant a specific uncrafted blueprint has every resource it needs.
-  - **Global Target Watcher** — notifies you when your stock of a resource covers the combined requirement across *every* uncrafted blueprint at once, so you know when you can stop farming a given material entirely.
-- **Missions** — track mission state and rewards alongside your inventory.
-- **Analytics panel** — overview of inventory/crafting data.
-- **Accounts** — registration and login with hashed passwords, backed by MySQL.
+### Inventory tracking
+
+Manage resource quantities and see live stock levels, in a searchable and filterable table rather than a paginated list.
+
+### Foundry / crafting system
+
+Browse blueprints by category, start crafting, and consume the correct resources and credits automatically.
+
+### Automatic readiness alarms
+
+Built on an Observer pattern, so the inventory never needs to know an alarm exists:
+
+- **Blueprint Threshold Watcher** — notifies you the instant a specific uncrafted blueprint has every resource it needs.
+- **Global Target Watcher** — notifies you when your stock of a resource covers the combined requirement across *every* uncrafted blueprint at once, so you know when you can stop farming a given material entirely.
+
+### Missions
+
+Track mission state and rewards alongside your inventory; completed missions feed materials and credits straight back into stock.
+
+### Analytics panel
+
+An overview of inventory and crafting data, aggregating requirements across everything still uncrafted.
+
+### Accounts
+
+Registration and login with bcrypt-hashed passwords, backed by MySQL, with Redis-backed rate limiting and device lockout.
 
 ## Walkthrough
 
@@ -67,7 +108,7 @@ A second view flips it around by blueprint — for each uncrafted blueprint, its
 
 ![Uncrafted blueprints overview](screenshots/10-analytics-uncrafted-blueprints.png)
 
-## Tech Stack
+## Tech stack
 
 | Layer | Technology |
 |---|---|
@@ -81,17 +122,19 @@ A second view flips it around by blueprint — for each uncrafted blueprint, its
 
 ## Architecture
 
-The codebase follows a layered architecture built around two core design patterns:
+The codebase follows a layered architecture built around two core design patterns.
 
-- **Repository pattern** — every domain area (`auth`, `inventory`, `mission`) defines a repository interface in `service/`, with concrete MySQL or Redis implementations in `infrastructure/`. This keeps the service layer and UI decoupled from the specific data store.
-- **Observer pattern** — the inventory publishes `InventoryChangedEvent`s whenever stock changes. Watchers (`BlueprintThresholdWatcher`, `GlobalTargetWatcher`) subscribe as `InventoryObserver`s and independently decide whether an alarm should fire, without the inventory service needing to know about alarms at all.
+**Repository pattern** — every domain area (`auth`, `inventory`, `mission`) defines a repository interface in `service/`, with concrete MySQL or Redis implementations in `infrastructure/`. This keeps the service layer and UI decoupled from the specific data store.
+
+**Observer pattern** — the inventory publishes `InventoryChangedEvent`s whenever stock changes. Watchers (`BlueprintThresholdWatcher`, `GlobalTargetWatcher`) subscribe as `InventoryObserver`s and independently decide whether an alarm should fire, without the inventory service needing to know about alarms at all.
 
 ```
 org.example
-├── model/            # Domain objects (User, Blueprint, ResourceComponent, Mission, ...)
+├── model/             # Domain objects (User, Blueprint, ResourceComponent, Mission, ...)
 ├── service/           # Business logic + repository interfaces (auth, inventory, mission)
 ├── infrastructure/    # MySQL/Redis repository implementations, DB connections, alarms
-├── ui/                # Swing views (Login, Register, Main, Inventory, Foundry, Missions, Analytics)
+├── ui/                # Swing views (Login, Register, Main, Inventory, Foundry,
+│                      # Missions, Analytics)
 └── util/              # Logging, device identification, UI helpers
 ```
 
@@ -108,41 +151,50 @@ org.example
 - Error messages shown to the user never leak stack traces or internal details.
 - Application events (auth, inventory, foundry, warnings) are logged for auditing and debugging via a dedicated logger.
 
-## Getting Started
+## Getting started
 
 ### Prerequisites
 
 - JDK 21+
 - Maven
-- Docker & Docker Compose (recommended — spins up MySQL and Redis for you)
+- Docker & Docker Compose — recommended, spins up MySQL and Redis for you
 
 ### Setup
 
-1. Clone the repository.
-2. Copy `.env.example` to `.env` and fill in your own values:
-   ```
-   DB_HOST=localhost
-   DB_PORT=3306
-   DB_NAME=warframe_foundry
-   DB_USER=root
-   DB_ROOT_PASSWORD=your_mysql_root_password_here
+**1. Clone the repository.**
 
-   REDIS_HOST=localhost
-   REDIS_PORT=6379
-   ```
-3. Start MySQL and Redis:
-   ```bash
-   docker compose up -d
-   ```
-   The MySQL schema in `sql/init.sql` is applied automatically on first startup.
-4. Build the project:
-   ```bash
-   mvn clean package
-   ```
-5. Run the application:
-   ```bash
-   java -jar target/Code-1.0-SNAPSHOT.jar
-   ```
+**2. Copy `.env.example` to `.env`** and fill in your own values:
+
+```
+DB_HOST=localhost
+DB_PORT=3306
+DB_NAME=warframe_foundry
+DB_USER=root
+DB_ROOT_PASSWORD=your_mysql_root_password_here
+
+REDIS_HOST=localhost
+REDIS_PORT=6379
+```
+
+**3. Start MySQL and Redis:**
+
+```bash
+docker compose up -d
+```
+
+The MySQL schema in `sql/init.sql` is applied automatically on first startup.
+
+**4. Build the project:**
+
+```bash
+mvn clean package
+```
+
+**5. Run the application:**
+
+```bash
+java -jar target/Code-1.0-SNAPSHOT.jar
+```
 
 ## Database
 
@@ -150,6 +202,12 @@ The schema (`sql/init.sql`) includes tables for users, login attempts, item cate
 
 ## Status
 
-This is a personal project built to solve a genuinely annoying problem in Warframe's UX. Contributions, suggestions, and issue reports are welcome.
+A personal project built to solve a genuinely annoying problem in Warframe's UX. Contributions, suggestions, and issue reports are welcome.
 
-*Not affiliated with or endorsed by Digital Extremes. Warframe is a trademark of Digital Extremes Ltd.*
+<sub>Not affiliated with or endorsed by Digital Extremes. Warframe is a trademark of Digital Extremes Ltd.</sub>
+
+---
+
+<p align="center">
+  <a href="https://github.com/raulpop-codes"><img src="https://img.shields.io/badge/More%20of%20my%20work-0E2A1F?style=for-the-badge&logo=github&logoColor=3FB27F"></a>
+</p>
