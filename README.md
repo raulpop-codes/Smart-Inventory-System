@@ -9,6 +9,7 @@
   <img src="https://img.shields.io/badge/Redis-0E2A1F?style=for-the-badge&logo=redis&logoColor=3FB27F">
   <img src="https://img.shields.io/badge/Docker-0E2A1F?style=for-the-badge&logo=docker&logoColor=3FB27F">
   <img src="https://img.shields.io/badge/Maven-0E2A1F?style=for-the-badge&logo=apachemaven&logoColor=3FB27F">
+  <a href="https://github.com/raulpop-codes/Smart-Inventory-System/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/raulpop-codes/Smart-Inventory-System/ci.yml?style=for-the-badge&label=CI&labelColor=0E2A1F&color=0E2A1F&logo=githubactions&logoColor=3FB27F"></a>
 </p>
 
 A desktop inventory and crafting manager inspired by *Warframe*'s Foundry system — rebuilt to actually be usable. Instead of manually digging through thousands of resources to figure out what a blueprint needs and how much of it you're missing, this app tracks your stock, tells you exactly what's still required, and alerts you the moment a blueprint — or a shared resource across *all* your pending blueprints — is ready to build.
@@ -21,7 +22,7 @@ A desktop inventory and crafting manager inspired by *Warframe*'s Foundry system
 
 ---
 
-**Contents** · [Why this exists](#why-this-exists) · [Features](#features) · [Walkthrough](#walkthrough) · [Tech stack](#tech-stack) · [Architecture](#architecture) · [Security](#security) · [Getting started](#getting-started)
+**Contents** · [Why this exists](#why-this-exists) · [Features](#features) · [Walkthrough](#walkthrough) · [Tech stack](#tech-stack) · [Architecture](#architecture) · [Tests](#tests) · [Security](#security) · [Getting started](#getting-started)
 
 ---
 
@@ -137,6 +138,26 @@ org.example
 │                      # Missions, Analytics)
 └── util/              # Logging, device identification, UI helpers
 ```
+
+## Tests
+
+[17 JUnit 5 tests](Code/src/test/java/org/example) run on every push, and **none of them
+need MySQL, Redis or Docker**. That is the Repository pattern paying off: because
+`InventoryService` depends on the `InventoryRepository` interface rather than on the MySQL
+implementation, the suite swaps in a 40-line in-memory repository and tests the real
+business logic against it.
+
+```bash
+cd Code && mvn verify
+```
+
+| Covered | What is asserted |
+|---|---|
+| `ResourceComponent` | stock can never go negative, zero-amount operations are refused, and a refused subtraction leaves the quantity untouched |
+| `InventoryService` | adding and consuming update the stock and persist it; a refused operation never reaches the repository |
+| Error handling | an unknown resource id raises `ResourceNotFoundException` instead of failing silently |
+| Observer pattern | every registered observer is notified with the quantity *after* the change, and a refused change notifies nobody |
+| Category filtering | `ALL` returns everything regardless of casing, a real category filters |
 
 ## Security
 
